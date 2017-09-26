@@ -9,4 +9,6 @@ RUN apt-get update \
 && apt-get install -y vim \
 && apt-get install -y python3-lxml \
 && apt-get install -y python3-bsddb3 \
-&& pip install -r requirements.txt
+&& pip install -r requirements.txt \
+&& mkdir -p pachong
+WORKDIR /root/pachong
